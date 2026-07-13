@@ -1,112 +1,94 @@
 # 📦 Inventory Management System
 
-A modern web-based **Inventory Management System** designed to help businesses efficiently manage products, stock levels, suppliers, sales, and purchases. The system provides an easy-to-use dashboard for administrators to monitor inventory and generate reports.
+A web-based **Inventory Management System** developed to simplify inventory operations for businesses. The system enables administrators to manage products, categories, suppliers, customers, purchases, sales, and inventory efficiently through an intuitive dashboard.
 
 ---
 
 ## 🚀 Features
 
-### 👨‍💼 Admin
-- Secure Login & Authentication
-- Dashboard with inventory statistics
-- Manage Products (Add, Edit, Delete)
-- Manage Categories
-- Manage Suppliers
-- Manage Customers
-- Stock In Management
-- Stock Out Management
-- Inventory Tracking
-- Sales Management
-- Purchase Management
-- Generate Reports
-- User Management
-- Profile Management
+### 🔐 Authentication
+- Secure Admin Login
+- Session Management
+- User Profile Management
 
 ### 📦 Product Management
-- Add new products
-- Update product information
-- Delete products
-- Product categories
-- Product images
-- Product search and filtering
+- Add, Edit, Delete Products
+- Product Categories
+- Product Search
+- Product Stock Management
 
-### 📊 Inventory Management
-- Real-time stock tracking
-- Low stock alerts
-- Stock movement history
-- Automatic inventory updates
+### 🏷️ Category Management
+- Create Categories
+- Update Categories
+- Delete Categories
 
-### 🛒 Sales Management
-- Create sales invoices
-- Update inventory after sales
-- Customer purchase history
+### 🚚 Supplier Management
+- Add Suppliers
+- Update Supplier Information
+- Supplier Records
 
-### 🚚 Purchase Management
-- Record supplier purchases
-- Increase stock automatically
-- Purchase history
+### 👥 Customer Management
+- Manage Customer Details
+- Customer Purchase History
+
+### 📥 Stock In
+- Record New Inventory
+- Update Stock Quantities
+
+### 📤 Stock Out
+- Record Product Sales
+- Automatic Stock Deduction
+
+### 📊 Dashboard
+- Total Products
+- Total Categories
+- Total Suppliers
+- Total Customers
+- Stock Summary
+- Low Stock Alerts
 
 ### 📈 Reports
+- Inventory Report
 - Sales Report
 - Purchase Report
-- Stock Report
-- Low Stock Report
-- Product Report
+- Stock Movement Report
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-### Frontend
+**Frontend**
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap 5
+- Bootstrap
 
-### Backend
+**Backend**
 - PHP
 
-### Database
+**Database**
 - MySQL
 
-### Server
-- XAMPP / Apache
+**Server**
+- Apache (XAMPP)
 
 ---
 
 ## 📂 Project Structure
 
 ```
-inventory-management-system/
-│
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── config/
-│   └── database.php
+Inventory_Management/
 │
 ├── admin/
-│
-├── products/
-│
-├── categories/
-│
-├── suppliers/
-│
-├── customers/
-│
-├── purchases/
-│
-├── sales/
-│
-├── reports/
-│
+├── assets/
+├── config/
+├── database/
 ├── includes/
-│
+├── products/
+├── suppliers/
+├── customers/
+├── reports/
 ├── uploads/
-│
 ├── index.php
 └── README.md
 ```
@@ -115,68 +97,48 @@ inventory-management-system/
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
+### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/inventory-management-system.git
+git clone https://github.com/RAZAN220/Inventory_Management.git
 ```
 
-### 2. Move project
+### Open Project
 
-Copy the project into your **htdocs** folder.
+Move the project to your XAMPP `htdocs` folder.
 
 ```
-C:\xampp\htdocs\inventory-management-system
+C:\xampp\htdocs\Inventory_Management
 ```
 
-### 3. Import Database
+### Database Setup
 
-- Open **phpMyAdmin**
-- Create a new database
+1. Open **phpMyAdmin**
+2. Create a database named:
 
 ```
 inventory_db
 ```
 
-- Import the SQL file
+3. Import the SQL file into the database.
 
-```
-database/inventory_db.sql
-```
+### Configure Database
 
-### 4. Configure Database
-
-Edit
+Update your database credentials in:
 
 ```
 config/database.php
 ```
 
-```php
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "inventory_db";
-```
+### Run the Project
 
-### 5. Start Server
+Start **Apache** and **MySQL** from XAMPP.
 
-- Apache
-- MySQL
-
-### 6. Open Browser
+Open your browser:
 
 ```
-http://localhost/inventory-management-system
+http://localhost/Inventory_Management
 ```
-
----
-
-## 🔐 Default Login
-
-| Username | Password |
-|----------|----------|
-| admin | admin123 |
 
 ---
 
@@ -185,62 +147,54 @@ http://localhost/inventory-management-system
 - Login Page
 - Dashboard
 - Product Management
-- Category Management
 - Supplier Management
 - Customer Management
-- Stock In
-- Stock Out
-- Sales Management
-- Purchase Management
-- Reports
-
-> *(Add screenshots inside a `/screenshots` folder and update this section.)*
+- Inventory Reports
 
 ---
 
-## 📋 Future Improvements
+## 🎯 Future Enhancements
 
-- Barcode Scanner
+- Barcode Scanner Integration
 - QR Code Support
-- Email Notifications
-- SMS Alerts
 - Export Reports (PDF & Excel)
-- Multi-Branch Inventory
+- Email Notifications
+- Multi-user Roles
+- Responsive Mobile Design
 - REST API
-- Dark Mode
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
 1. Fork the repository
 2. Create a feature branch
 
 ```bash
-git checkout -b feature-name
+git checkout -b feature/new-feature
 ```
 
 3. Commit your changes
 
 ```bash
-git commit -m "Add new feature"
+git commit -m "Added new feature"
 ```
 
 4. Push to GitHub
 
 ```bash
-git push origin feature-name
+git push origin feature/new-feature
 ```
 
-5. Open a Pull Request
+5. Create a Pull Request.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is available under the **MIT License**.
 
 ---
 
@@ -248,12 +202,15 @@ This project is licensed under the MIT License.
 
 **Mohamath Razan**
 
-- Web Developer
-- UI/UX Designer
-- Cybersecurity Learner
+- 🌐 Web Developer
+- 🎨 UI/UX Designer
+- 🔒 Cybersecurity Learner
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/RAZAN220
+
+Project Repository:
+https://github.com/RAZAN220/Inventory_Management
 
 ---
 
-⭐ If you found this project useful, don't forget to give it a **Star**!
+⭐ If you like this project, don't forget to **Star** the repository!
